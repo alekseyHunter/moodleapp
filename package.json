@@ -1,7 +1,7 @@
 {
-  "name": "moodlemobile",
-  "version": "3.9.2",
-  "description": "The official app for Moodle.",
+  "name": "nmstu_moodle_app",
+  "version": "0.0.1",
+  "description": "The official app for NMSTU.",
   "author": {
     "name": "Moodle Pty Ltd.",
     "email": "mobile@moodle.com"
