@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "The official app for NMSTU.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "NMSTU",
+    "email": "feedback@magtu.ru"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
@@ -253,7 +253,7 @@
       "category": "public.app-category.education",
       "icon": "resources/desktop/icon.icns",
       "target": "mas",
-      "bundleVersion": "3.9.2",
+      "bundleVersion": "0.0.1",
       "extendInfo": {
         "ElectronTeamID": "2NU57U5PAW"
       }
