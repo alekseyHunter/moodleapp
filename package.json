@@ -1,10 +1,10 @@
 {
-  "name": "moodlemobile",
+  "name": "nmstu_moodle_app",
   "version": "3.9.2",
-  "description": "The official app for Moodle.",
+  "description": "The official app for NMSTU.",
   "author": {
-    "name": "Moodle Pty Ltd.",
-    "email": "mobile@moodle.com"
+    "name": "NMSTU",
+    "email": "feedback@magtu.ru"
   },
   "config": {
     "ionic_webpack": "./config/webpack.config.js",
