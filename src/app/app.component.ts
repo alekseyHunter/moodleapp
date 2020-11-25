@@ -27,6 +27,7 @@ import { CoreLoginHelperProvider } from '@core/login/providers/helper';
 import { Keyboard } from '@ionic-native/keyboard';
 import { ScreenOrientation } from '@ionic-native/screen-orientation';
 import { CoreLoginSitesPage } from '@core/login/pages/sites/sites';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 @Component({
     templateUrl: 'app.html'
@@ -43,7 +44,7 @@ export class MoodleMobileApp implements OnInit {
             private eventsProvider: CoreEventsProvider, private loginHelper: CoreLoginHelperProvider, private zone: NgZone,
             private appProvider: CoreAppProvider, private langProvider: CoreLangProvider, private sitesProvider: CoreSitesProvider,
             private screenOrientation: ScreenOrientation, private urlSchemesProvider: CoreCustomURLSchemesProvider,
-            private utils: CoreUtilsProvider, private urlUtils: CoreUrlUtilsProvider, private network: Network) {
+            private utils: CoreUtilsProvider, private urlUtils: CoreUrlUtilsProvider, private network: Network, private splashscreen: SplashScreen) {
         this.logger = logger.getInstance('AppComponent');
 
         platform.ready().then(() => {
@@ -66,6 +67,8 @@ export class MoodleMobileApp implements OnInit {
                     app.setElementClass('platform-windows', true);
                 }
             }
+
+            this.splashscreen.hide();
 
             // Register back button action to allow closing modals before anything else.
             this.appProvider.registerBackButtonAction(() => {

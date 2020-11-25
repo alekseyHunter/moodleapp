@@ -97,7 +97,7 @@ export class CoreLoginSitePage {
             CoreConfig.instance.get(CoreLoginHelperProvider.ONBOARDING_DONE, false).then((onboardingDone) => {
                 if (!onboardingDone) {
                     // Check onboarding.
-                    this.showOnboarding();
+                    //this.showOnboarding();
                 }
             });
         }

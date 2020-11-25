@@ -2,7 +2,7 @@
 // http://ionicframework.com/docs/theming/
 
 // Font path is used to include ionicons,
-// roboto, and noto sans fonts
+// noto sans fonts
 $font-path: "../assets/fonts";
 $assets-path: "../assets";
 
@@ -31,6 +31,10 @@ $orange:          #f98012; // Accent (never text).
 $yellow:          #fbad1a; // Accent (never text).
 $purple:          #8e24aa; // Accent (never text).
 
+// Main color of Theme application
+$nmstuColorTheme: #414eb8;
+$nmstuPrimary: #323C8D;
+
 // Branded apps customization
 // --------------------------------------------------
 @import "bmma";
@@ -52,7 +56,7 @@ $orange-light:    lighten($orange, 10%) !default;
 $yellow-light:    mix($yellow, white, 20%) !default;
 $yellow-dark:     mix($yellow, black, 40%) !default;
 
-$core-color:          $orange !default;
+$core-color:          $nmstuColorTheme !default;
 $core-color-light:    lighten($core-color, 10%) !default;
 $core-color-dark:     darken($core-color, 10%) !default;
 
@@ -224,7 +228,7 @@ $loading-md-spinner-color: $core-loading-spinner-color;
 $spinner-md-crescent-color: $core-spinner-color;
 $tabs-md-tab-color-inactive: $tabs-tab-color-inactive;
 $button-md-outline-background-color: $core-button-outline-background-color;
-$font-family-md-base: "Roboto", "Noto Sans", "Helvetica Neue", sans-serif !default;
+$font-family-md-base: "Noto Sans", "Helvetica Neue", sans-serif !default;
 $select-md-placeholder-color: $core-select-color !default;
 $datetime-md-placeholder-color: $core-datetime-ios-placeholder-color !default;
 $label-md-text-color: $text-color !default;
